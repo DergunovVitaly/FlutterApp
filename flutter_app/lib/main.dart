@@ -1,14 +1,28 @@
 import 'package:flutter/material.dart';
 
+//class MyBody extends StatelessWidget {
+//  WidgetBuilder(BuildContext context) {
+//    return new Center(child: new Column(
+//      children: [
+//        new Text('Hello world'),
+//        new FlatButton(onPressed: (){},
+//            child: Text('open'),
+//          color: Colors.red,
+//          textColor: Colors.white,
+//        )
+//      ],
+//    ));
+//  }
+//
+//}
+
 void main() {
-  runApp(new MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: new AppBar(
-          title: new Text("Navigation title"),
-        ),
-        body: new Text("Earth"),
-      )
-  )
+  runApp(
+    Center( // виджет, который выравнивает содержимое по центру
+      child: Text(
+        'Hello, World!',
+        textDirection: TextDirection.ltr,
+      ),
+    ),
   );
 }
