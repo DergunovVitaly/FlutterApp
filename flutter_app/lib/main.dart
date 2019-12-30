@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    new Center(
-       child: new Text("Hello Wooorld", textDirection: TextDirection.ltr)
-    )
+  runApp(new MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: new AppBar(
+          title: new Text("Navigation title"),
+        ),
+        body: new Text("Earth"),
+      )
+  )
   );
 }
