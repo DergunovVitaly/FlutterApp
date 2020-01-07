@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build ( BuildContext context ) {
     return new MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'GestureDetector Example' ,
+      title: "GestureDetector Example",
       home: new HomePage() ,
     );
   }
@@ -37,14 +37,14 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     Widget redSection = new GestureDetector(
       onTapUp: tapUp,
-      child: new Container(
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
-        color: backgroundColor,
-        child: new Center(
-          child: new Text(' "Hey there" '),
-        ),
-      ),
+        child: new Container(
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
+          color: backgroundColor,
+           child: new Center(
+             child: new Text(' "Hey there" '),
+           ),
+     ),
     );
 
 
